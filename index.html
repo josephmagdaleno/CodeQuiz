@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz</title>
+<link href="style.css" rel="stylesheet">
+</head>
+
+ <body>
+  <nav class="navbar navbar-light bg-light">
+    <form class="form-inline">
+      <button id="highScoreButton" class="high-btn" type="button" onclick="loadScores();">High Scores</button>
+    </form>
+  </nav>
+   <div class="container">
+     <div id="quizContainer"  class="hide">
+        <div class="title">History Quiz</div>
+        <text id=numbertime class=timerC>Time:<text id="time001">60</text></text>
+        <div id="question" class="question"></div>
+        <label class="option"><input type="radio" name="option" value="1" /> <span id="op1"></span></label>
+        <label class="option"><input type="radio" name="option" value="2" /> <span id="op2"></span></label>
+        <label class="option"><input type="radio" name="option" value="3" /> <span id="op3"></span></label>
+        <label class="option"><input type="radio" name="option" value="4" /> <span id="op4"></span></label>
+     </div>
+     <div class="controls">
+       <div class="bigbutton">
+        <button id="startButton" class="start-btn btn" onclick="startQuiz();">Start Quiz</button>
+        <h3 id="firstSentence" class= "mainSentence">You will have 60 seconds to answer 5 questions about History.</h3>
+       </div>
+      <button id="nextButton" class="next-btn btn hide" onclick="loadNextQuestion();">Next Question</button>
+    </div>
+
+        
+  </div>
+<div id="result" class="container result" style="display:none;"></div>
+<script src="questions.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

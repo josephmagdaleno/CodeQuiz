@@ -15,9 +15,13 @@ A quiz coded out for homework assignment #3
 
 - Five questions to be asked for the user.
 
--The user has time to prepare to take the quiz.
+- The user has time to prepare to take the quiz.
 
--The user will be timed.
+- The user will be timed.
+- Alert will be displayed if there is no question checked.
+- The timer will stop once the quiz is finished
+- The timer does not start until the user starts the quiz.
+- If the user does not finish the quiz on time the quiz will end with whatever score they have and taken to the score page.
 
 
 # Usage:
